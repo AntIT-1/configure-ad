@@ -36,7 +36,7 @@ Next, set the domain controller's IP address to static instead of dynamic. This 
 ![image](https://github.com/AntIT-1/configure-ad/assets/141161539/41dcef91-0990-4385-ad62-03eb417eebdf)
 
 The client will now be setup. Create another virtual machine and name it "Client-1". Choose Windows 10 as the operating system with two CPU's. Ensure Connectivity between the client and Domain Controller. Login to Client-1 with Remote Desktop and ping DC-1’s private IP address with ping -t <ip address> (perpetual ping)
-Login to the Domain Controller and enable ICMPv4 in on the local windows Firewall
+Login to the Domain Controller and enable ICMPv4 in on the local windows Firewall.
 Check back at Client-1 to see the ping succeed.
 
 ![image](https://github.com/AntIT-1/configure-ad/assets/141161539/41880416-91a4-4092-90b3-5c5ed363b8f2)
