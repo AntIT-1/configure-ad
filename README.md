@@ -61,10 +61,10 @@ Restart and then log back into DC-1 as user: mydomain.com\labuser
 ![image](https://github.com/AntIT-1/configure-ad/assets/141161539/986f8b85-3c26-41fa-bf89-27099914f696)
 
 Create an Admin and Normal User Account in Active Directory. 
-In Active Directory Users and Computers (ADUC), create an Organizational Unit (OU) called “_EMPLOYEES”
-Create a new OU named “_ADMINS”
-Create a new employee (same password) with the username of “user_admin”
-Add user_admin to the “Domain Admins” Security Group
+In Active Directory Users and Computers (ADUC), create an Organizational Unit (OU) called “_EMPLOYEES” and
+another OU named “_ADMINS”.
+Create a new employee (same password) with the username of “user_admin”.
+Add user_admin to the “Domain Admins” Security Group.
 Log out/close the Remote Desktop connection to DC-1 and log back in as “mydomain.com\user_admin”
 User_admin as your admin account from now on.
 
@@ -78,10 +78,9 @@ The new user was added to the domain admins group. Log on to the domain controll
 
 Join Client-1 to your domain
 From the Azure Portal, set Client-1’s DNS settings to the DC’s Private IP address
-From the Azure Portal, restart Client-1
-Login to Client-1 (Remote Desktop) as the original local admin (labuser) and join it to the domain (computer will restart)
-Login to the Domain Controller (Remote Desktop) and verify Client-1 shows up in Active Directory Users and Computers (ADUC) inside the “Computers” container on the root of the domain
-Create a new OU named “_CLIENTS” and drag Client-1 into there (Step is not really necessary, just for organizational purposes. I guess I skipped this in the lab!)
+from the Azure Portal then restart Client-1.
+
+
 ![image](https://github.com/AntIT-1/configure-ad/assets/141161539/eef34b38-2d11-420e-b8d6-dd2b5da30cae)
 
 An ipconfig/ all command confirms that the client-1 is now using the domain's DNS server.
@@ -96,7 +95,8 @@ Now client is on Domain!
 
 ![image](https://github.com/AntIT-1/configure-ad/assets/141161539/c0a93915-d514-4303-8dda-ddc2e6a50816)
 
-You can see the Client in Active Directory Users and Computers
+Login to Client-1 (Remote Desktop) as the original local admin (labuser) and join it to the domain (computer will restart).
+Login to the Domain Controller (Remote Desktop) and verify Client-1 shows up in Active Directory Users and Computers (ADUC) inside the “Computers” container on the root of the domain.
 
 ![image](https://github.com/AntIT-1/configure-ad/assets/141161539/7629fa3f-be49-40fa-8777-37cc15fa0328)
 
