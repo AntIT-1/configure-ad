@@ -49,9 +49,9 @@ No back on client-1 you can see that the ping started working after we enabled t
 
 ![image](https://github.com/AntIT-1/configure-ad/assets/141161539/d403e87d-9e30-4435-9f2c-3a181f3f8e4e)
 
-Install Active Directory
-Login to DC-1 and install Active Directory Domain Services
-Promote as a DC: Setup a new forest as mydomain.com (can be anything, just remember what it is)
+The next step is to install Active Directory.
+Login to DC-1 and install Active Directory Domain Services by clicking on "add roles and features". Once AD is install you can
+promote as a DC: Setup a new forest as mydomain.com (can be anything, just remember what it is)
 Restart and then log back into DC-1 as user: mydomain.com\labuser
 
 ![image](https://github.com/AntIT-1/configure-ad/assets/141161539/0586aba2-2235-4b39-b69f-f5201259d54f)
